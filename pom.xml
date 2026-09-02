@@ -14,7 +14,7 @@
 	</parent>
 
 	<groupId>com.calidad</groupId>
-	<artifactId>biblioteca</artifactId>
+	<artifactId>calidad-biblioteca2</artifactId>
 	<version>1.0.0</version>
 
     <properties>
