@@ -21,6 +21,9 @@
 		<java.version>17</java.version>
 		<sonar.organization>walterbaya-maker</sonar.organization>
 		<sonar.projectKey>walterbaya-maker_calidad-biblioteca</sonar.projectKey>
+		<sonar.coverage.jacoco.xmlReportPaths>
+			${project.build.directory}/site/jacoco/jacoco.xml
+		</sonar.coverage.jacoco.xmlReportPaths>
 	</properties>
 
 	<dependencies>
