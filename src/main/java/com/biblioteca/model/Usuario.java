@@ -5,6 +5,10 @@ import jakarta.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import jakarta.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 public class Usuario {
 
@@ -33,6 +37,8 @@ public class Usuario {
         this.moroso = false;
     }
 
+    // --- GETTERS ---
+
     public Long getId() {
         return id;
     }
@@ -57,11 +63,29 @@ public class Usuario {
         return prestamos;
     }
 
+    // --- SETTERS FALTANTES ---
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public void setActivo(boolean activo) {
         this.activo = activo;
     }
 
     public void setMoroso(boolean moroso) {
         this.moroso = moroso;
+    }
+
+    public void setPrestamos(List<Prestamo> prestamos) {
+        this.prestamos = prestamos;
     }
 }
