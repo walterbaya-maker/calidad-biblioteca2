@@ -67,5 +67,33 @@ public class Libro {
     public void setPrestado(boolean prestado) {
         this.prestado = prestado;
     }
+
+    public String prestar() {
+
+        if (titulo == null) {
+            return "No se puede prestar";
+        }
+
+        if (titulo.isEmpty()) {
+            return "No se puede prestar";
+        }
+
+        if (autor == null) {
+            return "No se puede prestar";
+        }
+
+        if (autor.isEmpty()) {
+            return "No se puede prestar";
+        }
+
+        if (prestado) {
+            return "El libro ya está prestado";
+        }
+
+        prestado = true;
+
+        return "Libro prestado correctamente";
+    }
+
 }
 
